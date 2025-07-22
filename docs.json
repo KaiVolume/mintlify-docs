@@ -1,35 +1,47 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Volume Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#6C2CC6",
+    "light": "#6C2CC6",
+    "dark": "#6C2CC6"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.ico",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Payments",
         "groups": [
+          { "group": "Payments Overview", "pages": ["index"] },
           {
-            "group": "Get Started",
+            "group": "Mobile Payments",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "mobile/overview",
+              "mobile/prerequisites",
+              "mobile/ui-best-practices",
+              "mobile/integrate"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Additional Resources",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              {
+                "group": "Payment",
+                "pages": [
+                  "additional-resources/payment/pay-by-link",
+                  "additional-resources/payment/payment-flow",
+                  "additional-resources/payment/payment-status",
+                  "additional-resources/payment/payment-lifecycle-with-va",
+                  "additional-resources/payment/payment-identifiers",
+                  "additional-resources/payment/payment-amount-limits",
+                  "additional-resources/payment/callback",
+                  "additional-resources/payment/webhooks"
+                ]
+              },
+              "additional-resources/ux-guidelines",
+              "additional-resources/bank-coverage",
+              "additional-resources/faq"
             ]
           }
         ]
@@ -39,9 +51,7 @@
         "groups": [
           {
             "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "pages": ["api-reference/introduction"]
           },
           {
             "group": "Endpoint Examples",
@@ -58,26 +68,21 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "Merchant Portal",
+          "href": "https://dashboard.volumepay.io",
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
+          "anchor": "Status",
+          "href": "https://status.getvolume.com",
           "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
   },
   "navbar": {
     "links": [
@@ -89,14 +94,8 @@
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://dashboard.volumepay.io"
     }
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
-  }
+  "footer": {}
 }
